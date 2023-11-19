@@ -36,7 +36,7 @@ try:
   else:
     # streamlit.write('The user entered ', fruit_choice)
     back_from_function = get_fruityvice_data(fruit_choice)
-    streamlit.dataframe(fruityvice_normalized) #output it on the screen as table
+    streamlit.dataframe(back_from_function) #output it on the screen as table
 
 except URLError as e:
   streamlit.error()
